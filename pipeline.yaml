@@ -35,7 +35,7 @@ Parameters:
   # *** The stack name for the actual application we're deploying
   ApplicationStackName:
     Type: String
-    Default: ga_sandbox-github-codepipeline-app
+    Default: ga-sandbox-github-codepipeline-app
     AllowedPattern: "[A-Za-z0-9-]+"
 
 Resources:

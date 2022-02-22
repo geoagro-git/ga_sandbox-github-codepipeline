@@ -2,7 +2,7 @@
 
 # *** Change this to the desired name of the Cloudformation stack of 
 # your Pipeline (*not* the stack name of your app)
-CODEPIPELINE_STACK_NAME="ga_sandbox-github-codepipeline"
+CODEPIPELINE_STACK_NAME="ga-sandbox-github-codepipeline"
 
 if [ -z ${1} ]
 then
@@ -18,3 +18,5 @@ aws cloudformation update-stack \
         --stack-name $CODEPIPELINE_STACK_NAME \
         --parameters ParameterKey=GitHubOAuthToken,ParameterValue=${1} \
         --template-body file://pipeline.yaml
+        --region us-west-2
+        --profile geoagro
