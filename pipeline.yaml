@@ -10,7 +10,6 @@ Parameters:
     NoEcho: true
     MinLength: 40
     MaxLength: 40
-    AllowedPattern: '[a-z0-9]*'
 
   # *** The remaining parameters should either be:
   # - overridden via changing "Default" here (PREFERABLE, since then they're in source control)
@@ -25,7 +24,6 @@ Parameters:
   GitHubRepo:
     Type: String
     Default: ga_sandbox-github-codepipeline
-    AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubBranch:
     Type: String
